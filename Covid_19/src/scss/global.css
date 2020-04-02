@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 1400px;
+}
+body .nav {
+  display: flex;
+  justify-content: space-around;
+  background: url(../images/png/bcgbar-1.png) no-repeat ;
+
+}
+nav{
+  padding-top: 30px;
+}
+.img{
+  height: 100px;
+  width: 90px;
+  padding-bottom: 20PX;
+}
+body .nav nav a, button {
+  text-decoration: none;
+  padding: 20px;
+  color: #1A519E;
+
+}
+body .nav nav a:hover {
+  color: rgb(51, 56, 63);
+}
+/* body .nav button {
+  border: 1px #1A519E;
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+} */
+.lang{
+  border: 1px solid #1A519E;
+  border-radius: 20px;
+
+}
+header {
+  text-align: center;
+  background: url(../images/png/Rectangle.png) no-repeat;
+  padding: 10px;
+}
+header p {
+  color:#1078AD;
+}
+body .first_section {
+  display: flex;
+}

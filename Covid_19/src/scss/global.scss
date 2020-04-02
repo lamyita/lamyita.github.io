@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 1400%;
+
+    
+}
+
+body .nav{
+display: flex;    
+justify-content: space-around;
+background: url(../images/png/bcgbar-1.png) no-repeat;
+
+ nav a{
+     text-decoration: none;
+     padding: 20px;
+     color: black;
+     &:hover{
+         color: blue;
+
+   }
+ }
+ button{
+     background-color: none;
+     border: 1px blue;
+     padding: 20px;
+     border-radius: 10px;
+ }
+
+}
+header{
+    text-align: center;
+    background-image: url(src/images/png/);
+     p{
+color: green($color: #c54d4d);    
+}
+
+
+} 
+body .first_section{
+    display: flex;
+}
+    
+  
