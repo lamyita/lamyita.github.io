@@ -42,7 +42,8 @@ header p {
 body .first_section {
   display: flex;
   text-align: center;
-  margin-top: 1opx;
+  padding-top: 30px;
+  justify-content: space-around;
 }
 body .first_section .image_header {
   margin-right: 80px;
@@ -56,11 +57,55 @@ body .first_section p {
 }
 body .first_section button {
   background-color: #1078ad;
-  padding: 10px 140px 10px 140px;
+  padding: 10px 200px 10px 200px;
   border: none;
   border-radius: 5px;
 }
 body .first_section button a {
   color: white;
   text-decoration: none;
+  font-size: 20px;
+}
+.sect_two h2 {
+  color: #1078ad;
+  text-align: center;
+  padding-top: 20px;
+}
+.sect_two .sect__two-img {
+  display: flex;
+  justify-content: space-around;
+}
+.sect_two .sect__two-img p {
+  color: #000000;
+  font-size: 30px;
+}
+.sect__recommandation {
+  background-color: #1078ad;
+}
+.sect__recommandation h2 {
+  color: #d0e5f0;
+  text-align: center;
+}
+.sect__recommandation .sect__recommandation-flex {
+  display: flex;
+  justify-content: space-around;
+}
+.sect__recommandation .sect__recommandation-first h3 {
+  color: #000000;
+}
+.sect__recommandation .sect__recommandation-first p {
+  color: #ffffff;
+}
+.sect__recommandation .sect__recommandation-two h3 {
+  color: #f4cf1b;
+  font-size: 39px;
+}
+.sect__recommandation .sect__recommandation-two p.nem-tele {
+  background-color: #f4cf1b;
+  color: #1078ad;
+  padding: 20px;
+}
+.sect__recommandation .sect__recommandation-two p {
+  color: white;
+  border-bottom: 1px solid #f4cf1b;
 }
