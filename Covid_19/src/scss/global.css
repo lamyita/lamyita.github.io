@@ -2,49 +2,65 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  max-width: 1400px;
+  font-family: "Cairo", sans-serif;
 }
-body .nav {
+.nav {
   display: flex;
+  padding: 10px;
+  width: 100%;
   justify-content: space-around;
-  background: url(../images/png/bcgbar-1.png) no-repeat ;
-
+  background-image: url("../images/png/bcgbar-1.png");
+  background-size: cover;
+  align-items: center;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  background-color: #96c5dc;
 }
-nav{
-  padding-top: 30px;
-}
-.img{
-  height: 100px;
-  width: 90px;
-  padding-bottom: 20PX;
-}
-body .nav nav a, button {
+.nav nav a {
   text-decoration: none;
   padding: 20px;
-  color: #1A519E;
-
+  color: black;
 }
-body .nav nav a:hover {
-  color: rgb(51, 56, 63);
+.nav nav a:hover {
+  color: blue;
 }
-/* body .nav button {
-  border: 1px #1A519E;
-  padding: 10px 30px 10px 30px;
+.nav button {
+  background-color: none;
+  border: 1px blue;
+  padding: 20px;
   border-radius: 10px;
-} */
-.lang{
-  border: 1px solid #1A519E;
-  border-radius: 20px;
-
 }
 header {
+  margin-top: 120px;
   text-align: center;
-  background: url(../images/png/Rectangle.png) no-repeat;
-  padding: 10px;
+  background-image: url("../images/png/headerbcg.png");
 }
 header p {
-  color:#1078AD;
+  color: #1078ad;
 }
 body .first_section {
   display: flex;
+  text-align: center;
+  margin-top: 1opx;
+}
+body .first_section .image_header {
+  margin-right: 80px;
+}
+body .first_section h1 {
+  color: #1078ad;
+}
+body .first_section p {
+  color: #7f7f7f;
+  font-size: 30px;
+}
+body .first_section button {
+  background-color: #1078ad;
+  padding: 10px 140px 10px 140px;
+  border: none;
+  border-radius: 5px;
+}
+body .first_section button a {
+  color: white;
+  text-decoration: none;
 }
