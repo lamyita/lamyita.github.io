@@ -86,6 +86,7 @@ body .first_section button a {
 .sect__recommandation {
   background-color: #1078ad;
   font-size: 30px;
+  padding-bottom: 20px;
 }
 .sect__recommandation h2 {
   color: #d0e5f0;
@@ -122,7 +123,6 @@ body .first_section button a {
   padding: 20px;
 }
 .sect__demr-test h2 {
-  text-align: center;
   color: #1078ad;
 }
 .sect__demr-test button {
@@ -135,7 +135,6 @@ body .first_section button a {
   color: white;
   text-decoration: none;
   font-size: 20px;
-  font-size: x-large;
 }
 footer {
   text-align: center;
@@ -172,7 +171,43 @@ footer .tele_num {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  flex-wrap: wrap;
 }
 .head__conseil .lastconseil {
   text-align: center;
+}
+.sect__Informations {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+  background-image: url("../images/png/sectinfo.png");
+  text-align: center;
+  flex-wrap: wrap;
+}
+.sect__Informations h2 {
+  color: #1078ad;
+}
+.sect__Informations p {
+  color: #1a519e;
+}
+.sect__Informations a {
+  text-decoration: none;
+  color: white;
+  background-color: #1078ad;
+  padding: 10px;
+}
+.sect__transmet {
+  text-align: center;
+}
+.sect__transmet .sect__transmet-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sect__transmet h2 {
+  color: #1078ad;
+}
+.sect__transmet p {
+  color: #1a519e;
 }
