@@ -20,6 +20,7 @@
     position: fixed;
     top: 0;
     background-color: #96c5dc;
+    // flex-wrap: wrap;
   }
   .nav nav a {
     text-decoration: none;
@@ -29,11 +30,16 @@
   .nav nav a:hover {
     color: blue;
   }
-  .nav button {
-    background-color: none;
-    border: 1px blue;
-    padding: 20px;
-    border-radius: 10px;
+//   .nav button {
+//     background-color: none;
+//     border: 1px blue;
+//     padding: 20px;
+//     border-radius: 10px;
+//   }
+  .lang{
+      border: 1px solid #1078AD;
+      border-radius: 10px;
+      padding: 5px;
   }
   header {
     margin-top: 120px;
@@ -47,6 +53,7 @@ body .first_section {
 text-align: center; 
 padding-top: 30px;   
 justify-content: space-around;
+flex-wrap: wrap;
 
 .image_header{
         margin-right: 80px;
@@ -72,19 +79,22 @@ button{
 }
 }
 .sect_two{
+    text-align: center;
     h2{
 
         color:#1078AD ;
         text-align: center;
         padding-top: 20px;
     }
-    // .sect_two-first{
-    //     display: flex;
-    //     justify-content: space-around;
-    // }
+    .sect_two-first{
+        // display: flex;
+        // justify-content: space-around;
+        // max-width: 30%;
+    }
     .sect__two-img{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
          
         p{
             color: #000000;
@@ -95,6 +105,7 @@ button{
 }
   .sect__recommandation{
       background-color: #1078AD;
+      font-size: 30px ;
       h2{
           color: #D0E5F0;
           text-align: center;
@@ -102,6 +113,7 @@ button{
       .sect__recommandation-flex{
           display: flex;
           justify-content: space-around;
+          flex-wrap: wrap;
       }
       .sect__recommandation-first{
           h3{
@@ -125,6 +137,74 @@ button{
           p{
               color: white;
               border-bottom: 1px solid #F4CF1B;
+              text-align: center;
           }
       }
+     
   }
+  .sect__demr-test{
+    background-image: url("../images/png/bar.png");
+    text-align: center;
+    padding: 20px;
+    h2{
+        text-align: center;
+        color: #1078AD;
+    }
+    button{
+        background-color:#1078AD ;
+        padding: 10px 200px 10px 200px;
+        border: none;
+        border-radius:5px;
+        a{
+            color: white;
+            text-decoration: none;
+            font-size:20px;
+    font-size: x-large;
+        }
+    }
+}
+footer{
+    text-align: center;
+    padding-top: 20px;
+    line-height: 40px;
+    h3{
+        color: #1078AD;
+    }
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: #2B2B2C;
+
+            
+        }
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .tele_num{
+        color: #369D53;
+        font-size: large;
+        
+    }
+}
+
+////////////////////////////////////////////////////page Conseil//////////////////////////////////////////////////////////////
+ .head__conseil{
+     text-align: center;
+     h1{
+        text-align: center;
+        color: #1078AD;
+
+     }
+      .conseil1{
+          display: flex;
+          justify-content: space-around;
+          text-align: center;
+      }
+      .lastconseil{
+          text-align: center;
+      }
+ }
