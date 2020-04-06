@@ -136,6 +136,8 @@ footer {
   footer .tele_num {
     color: #369d53;
     font-size: large; }
+  footer .bcgfooter {
+    background-image: url("../images/png/bcgfooter.png"); }
 
 .head__conseil {
   text-align: center; }

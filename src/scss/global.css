@@ -239,9 +239,48 @@ footer .bcgfooter {
   text-align: center;
   display: flex;
   justify-content: space-evenly;
-  border-top: 2px solid green;
+  border-top: 5px solid green;
   max-width: 380px;
   margin-left: auto;
   margin-right: auto;
+}
+#moncercle {
+  background: #88b7d3;
   border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+#monminicercle {
+  background: #1078ad;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: -7px;
+  margin-left: 30px;
+}
+#monpremminicercle {
+  background: #f4cf1b;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: -7px;
+}
+#lastcercle {
+  background: #1078ad;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: -7px;
+}
+main {
+  text-align: center;
+  background-color: #96c5dc;
+  padding: 20px;
+}
+main .border {
+  border-top: 3px solid #f4cf1b;
+  width: 230px;
+  text-align: center;
+  margin: auto;
 }
