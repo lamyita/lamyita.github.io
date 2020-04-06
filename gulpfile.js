@@ -14,7 +14,7 @@ function compile_sass() {
   return gulp
     .src("src/scss/**/*.scss")
     .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("src/css"));
+    .pipe(gulp.dest("src/scss"));
 }
 function watchSass() {
   return gulp.watch("src/scss/**/*.scss", compile_sass);
