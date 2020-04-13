@@ -16,6 +16,9 @@
   position: fixed;
   top: 0;
   background-color: #96c5dc; }
+  @media only screen and (max-width: 375px) {
+    .nav {
+      padding: 0px; } }
 
 .nav nav a {
   text-decoration: none;
@@ -33,7 +36,15 @@
 header {
   margin-top: 120px;
   text-align: center;
-  background-image: url("../images/png/headerbcg.png"); }
+  background-image: url("../images/png/headerbcg.png");
+  align-items: center;
+  width: 100%; }
+  @media only screen and (max-width: 375px) {
+    header {
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+      background-size: cover; } }
 
 header p {
   color: #1078ad; }
@@ -46,6 +57,14 @@ body .first_section {
   flex-wrap: wrap; }
   body .first_section .image_header {
     margin-right: 80px; }
+    @media only screen and (max-width: 375px) {
+      body .first_section .image_header img {
+        display: flex;
+        justify-content: center;
+        max-width: 375px;
+        margin-left: 10px;
+        padding: 0px;
+        padding-left: 40px; } }
   body .first_section h1 {
     color: #1078ad; }
   body .first_section p {
@@ -56,6 +75,9 @@ body .first_section {
     padding: 10px 200px 10px 200px;
     border: none;
     border-radius: 5px; }
+    @media only screen and (max-width: 375px) {
+      body .first_section button {
+        padding: 10px 100px 10px 100px; } }
     body .first_section button a {
       color: white;
       text-decoration: none;
@@ -74,6 +96,9 @@ body .first_section {
     .sect_two .sect__two-img p {
       color: #000000;
       font-size: 30px; }
+  @media only screen and (max-width: 375px) {
+    .sect_two {
+      text-align: center; } }
 
 .sect__recommandation {
   background-color: #1078ad;
@@ -101,6 +126,10 @@ body .first_section {
     color: white;
     border-bottom: 1px solid #f4cf1b;
     text-align: center; }
+  @media only screen and (max-width: 375px) {
+    .sect__recommandation {
+      text-align: center;
+      padding: 6px; } }
 
 .sect__demr-test {
   background-image: url("../images/png/bar.png");
@@ -113,6 +142,9 @@ body .first_section {
     padding: 10px 200px 10px 200px;
     border: none;
     border-radius: 5px; }
+    @media only screen and (max-width: 375px) {
+      .sect__demr-test button {
+        padding: 10px 100px 10px 100px; } }
     .sect__demr-test button a {
       color: white;
       text-decoration: none;
@@ -138,6 +170,9 @@ footer {
     font-size: large; }
   footer .bcgfooter {
     background-image: url("../images/png/bcgfooter.png"); }
+  @media only screen and (max-width: 375px) {
+    footer .display_div {
+      display: none; } }
 
 .head__conseil {
   text-align: center; }
@@ -169,6 +204,15 @@ footer {
     color: white;
     background-color: #1078AD;
     padding: 10px; }
+  @media only screen and (max-width: 375px) {
+    .sect__Informations {
+      display: block;
+      padding: 20px; }
+      .sect__Informations p {
+        padding-bottom: 20px; }
+      .sect__Informations a {
+        display: block;
+        margin: 10px; } }
 
 .sect__transmet {
   text-align: center; }
@@ -198,21 +242,20 @@ footer {
       font-size: 20px; }
 
 .page__Informations {
-  margin-top: 150px;
+  margin-top: 200px;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
   border-top: 5px solid green;
-  max-width: 380px;
+  max-width: 300px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  justify-content: space-between; }
 
 #moncercle {
   background: #88B7D3;
   border-radius: 50%;
   width: 30px;
-  height: 30px;
-  text-align: center; }
+  height: 30px; }
 
 #monminicercle {
   background: #1078AD;
@@ -245,4 +288,51 @@ main {
     width: 330px;
     text-align: center;
     margin: auto;
-    padding-top: 20px; }
+    padding-top: 30px; }
+  main .first__paragraph--center {
+    padding-bottom: 30px; }
+
+button {
+  background-color: #1078ad;
+  padding: 10px 200px 10px 200px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto; }
+  button a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center; }
+
+#quize1 {
+  text-align: center; }
+  #quize1 label {
+    color: #1078AD;
+    padding: 20px;
+    border: skyblue; }
+  #quize1 .input {
+    display: block; }
+  #quize1 .btn {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly; }
+
+input[type='radio']:after {
+  width: 7px;
+  height: 7px;
+  border-radius: 15px;
+  position: relative;
+  top: -6px;
+  content: '';
+  display: inline-block; }
+
+input[type='radio']:checked:after {
+  background-color: #ffa500;
+  content: '';
+  display: inline-block;
+  border: 2px solid white; }

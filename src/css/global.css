@@ -245,4 +245,18 @@ main {
     width: 330px;
     text-align: center;
     margin: auto;
-    padding-top: 20px; }
+    padding-top: 30px; }
+  main .first__paragraph--center {
+    padding-bottom: 30px; }
+
+button {
+  background-color: #1078ad;
+  padding: 10px 200px 10px 200px;
+  border: none;
+  border-radius: 5px;
+  text-align: center; }
+  button a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center; }

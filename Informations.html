@@ -68,7 +68,7 @@
                     du produit concerné le cas échéant et en cas de doute, en consultant un médecin compétent. </b></p>
         </div>
     </main>
-    <button><a href="Informations.html"><b>Demarer le test</a></b></button>
+    <button id="textChanger"><a href="Informations.html"><b>Demarer le test</a></b></button>
 
     <div class="sect__recommandation">
         <h2>Recommandation officielles </h2>
@@ -90,7 +90,81 @@
             </div>
         </div>
     </div>
-  
+
+    <div id="quize1">
+        <h1>Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</h1>
+        <div class="input">
+            <div>
+                <input type="radio" id="Oui" name="valid" value="Oui">
+                <label for="Oui">OUI</label>
+            </div>
+            <div>
+                <input type="radio" id="Non" name="valid" value="Non">
+                <label for="Non" class="check">Non</label>
+            </div>
+        </div>
+        <div class="btn">
+            <div>
+                <button id="quizenext" onclick="next()">Next</button>
+            </div>
+            <div>
+
+                <button id="quizeback" onclick="back()">Back</button>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="quize2">
+        Quelle est votre température corporelle ? <div>
+            <button class="confirmé">OUI</button>
+        </div>
+        <div>
+            <button class="confirmé">Non</button>
+        </div>
+    </div>
+    <div id="quize3">
+
+        Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ? <div>
+            <button class="confirmé">OUI</button>
+        </div>
+        <div>
+            <button class="confirmé">Non</button>
+        </div>
+        <div id="quize4">
+
+            Avez-vous eu des courbatures inhabituelles au cours des derniers jours ? <button
+                class="confirmé">OUI</button>
+        </div>
+        <div>
+            <button class="confirmé">Non</button>
+        </div>
+        <div id="quize5">
+
+
+            Ces derniers jours, avez-vous un mal de gorge ?                class="confirmé">OUI</button>
+        </div>
+        <div>
+            <button class="confirmé">Non</button>
+        </div>
+        <div id="quize6">
+
+
+            Ces dernières 24 heures, avez-vous de la diarrhée ? Avec au moins 3 selles molles.             class="confirmé">OUI</button>
+        </div>
+        <div>
+            <button class="confirmé">Non</button>
+        </div>
+        <div id="quize7">
+
+            Ces derniers jours, avez-vous une fatigue inhabituelle qui vous a obligé à vous reposer plus de la moitié de la journée ?
+
+        </div>
+        <div>
+            <button class="confirmé">Non</button>
+        </div> -->
+    <script src="src/js/test.js">
+
+    </script>
+
 </body>
 <footer>
 

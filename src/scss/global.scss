@@ -18,7 +18,10 @@
   position: fixed;
   top: 0;
   background-color: #96c5dc;
-  // flex-wrap: wrap;
+  @media  only screen and (max-width:375px){
+    padding: 0px;
+  }
+  
 }
 .nav nav a {
   text-decoration: none;
@@ -28,12 +31,7 @@
 .nav nav a:hover {
   color: blue;
 }
-//   .nav button {
-//     background-color: none;
-//     border: 1px blue;
-//     padding: 20px;
-//     border-radius: 10px;
-//   }
+
 .lang {
   border: 1px solid #1078ad;
   border-radius: 10px;
@@ -43,6 +41,17 @@ header {
   margin-top: 120px;
   text-align: center;
   background-image: url("../images/png/headerbcg.png");
+  align-items: center;
+  width: 100%;
+  @media  only screen and (max-width:375px){
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-size: cover;
+
+
+
+  }
 }
 header p {
   color: #1078ad;
@@ -56,6 +65,16 @@ body .first_section {
 
   .image_header {
     margin-right: 80px;
+    @media  only screen and (max-width:375px){
+      img{
+      display: flex;
+      justify-content: center;
+     max-width: 375px;
+    margin-left: 10px;
+    padding: 0px;
+    padding-left: 40px;
+  }
+    }
   }
   h1 {
     color: #1078ad;
@@ -69,6 +88,10 @@ body .first_section {
     padding: 10px 200px 10px 200px;
     border: none;
     border-radius: 5px;
+    @media  only screen and (max-width:375px){
+      padding: 10px 100px 10px 100px;
+
+    }
     a {
       color: white;
       text-decoration: none;
@@ -83,11 +106,7 @@ body .first_section {
     text-align: center;
     padding-top: 20px;
   }
-  // .sect_two-first {
-  //   // display: flex;
-  //   // justify-content: space-around;
-  //   // max-width: 30%;
-  // }
+
   .sect__two-img {
     display: flex;
     justify-content: space-around;
@@ -98,6 +117,10 @@ body .first_section {
       font-size: 30px;
     }
   }
+  @media  only screen and (max-width:375px){
+    text-align: center;
+  }
+
 }
 .sect__recommandation {
   background-color: #1078ad;
@@ -137,6 +160,10 @@ body .first_section {
       text-align: center;
     }
   }
+  @media  only screen and (max-width:375px){
+    text-align: center;
+padding: 6px;
+  }
 }
 .sect__demr-test {
   background-image: url("../images/png/bar.png");
@@ -150,6 +177,10 @@ body .first_section {
     padding: 10px 200px 10px 200px;
     border: none;
     border-radius: 5px;
+    @media  only screen and (max-width:375px){
+      padding: 10px 100px 10px 100px;
+
+    }
     a {
       color: white;
       text-decoration: none;
@@ -183,6 +214,13 @@ footer {
   .bcgfooter{
     background-image: url("../images/png/bcgfooter.png");
   }
+  @media  only screen and (max-width:375px){
+.display_div{
+  display: none;
+}
+  }
+
+  
 }
 
 
@@ -225,6 +263,18 @@ footer {
     color: white;
     background-color: #1078AD;
     padding: 10px;
+    
+  }
+  @media  only screen and (max-width:375px){
+display: block;
+padding: 20px;
+p{
+  padding-bottom: 20px;
+}
+a{
+display: block;
+margin: 10px;
+}
   }
 
 }
@@ -269,17 +319,20 @@ footer {
     }
   }
   }
+  ////////////////////////////////////////////////////////////
 
 
 .page__Informations{
-    margin-top: 150px;
+    margin-top: 200px;
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
     border-top: 5px solid green ;
-    max-width: 380px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
+    // justify-content: space-around;
+    justify-content: space-between;
   }
   
   
@@ -288,9 +341,8 @@ footer {
     border-radius:50%;
     width:30px;
     height:30px;
-  
-    text-align: center;
-  
+    // text-align: center;
+    
   }
   #monminicercle{
     background: #1078AD;
@@ -328,12 +380,79 @@ footer {
      width:330px;
      text-align: center;
      margin: auto;
-     padding-top: 20px;
+     padding-top: 30px;
+     
   }
-  
-
+  .first__paragraph--center{
+    padding-bottom: 30px;
+  }
+ 
   
  
+  }
+   
+  button {
+    background-color: #1078ad;
+    padding: 10px 200px 10px 200px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+margin-top: 30px;  
+margin-bottom: 30px;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+
+  a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  ///////////////////////////QUIZE//////////////
+  // #quize1,  #quize2, #quize3, #quize4,#quize5,#quize6,#quize7 {
+  //   text-align: center;
+  //   display: none;
+  //  .confirmé{
+  //     display: flex;
+  //     justify-content: space-around;
+  //   }
+  // }
+  #quize1 {
+    text-align: center;
+    label {
+      color: #1078AD;
+      padding: 20px;
+      border: skyblue;
+    }
+   
+    .input{
+      display: block;
+    }
+   .btn{
+      display: flex;
+      justify-content: center;
+      justify-content: space-evenly;
+    }
+    }
+    input[type='radio']:after {
+      width: 7px;
+      height: 7px;
+      border-radius: 15px;
+      position: relative;
+      top: -6px;
+      content: '';
+      display: inline-block;
+ }
+ 
+  input[type='radio']:checked:after {
+   
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    border: 2px solid white;
+
   }
   
   
