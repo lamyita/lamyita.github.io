@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/scss/global.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#"><img class="img" src="src/images/png/logo__sante.png" alt="logo" /></a>
+        <nav>
+            <a href="Conseil.html"><b>Conseil</b></a>
+            <a href="index.html"><b>Accueil</b></a>
+            <a class="lang"><b>عربي</b><img src="src/images/png/Icon material-language.png" alt="icon_lng" /></a>
+        </nav>
+    </div>   
+
+    <div id="quize1">
+        <h1>Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</h1>
+        <div class="input">
+            <div>
+                <input type="radio" id="Oui" name="valid" value="Oui">
+                <label for="Oui">OUI</label>
+            </div>
+            <div>
+                <input type="radio" id="Non" name="valid" value="Non">
+                <label for="Non" class="check">Non</label>
+            </div>
+        </div>
+        <div class="btn">
+            <div>
+                <button id="quizeback" onclick="next()">question d'avant</button>
+            </div>
+            <div>
+
+                <button id="quizenext" onclick="back()">question suivante</button>
+            </div>
+        </div>
+    </div>
+    <div class="sect__recommandation">
+        <h2>Recommandation officielles </h2>
+        <div class="sect__recommandation-flex">
+            <div class="sect__recommandation-first">
+                <h3>Si vous pensez être malade,</h3>
+                <p><b> évitez les endroits publics. <br>
+                        Ne rendez pas visite aux personnes fragiles. <br>
+                        Évitez de sortir de chez vous. <br>
+                        Respectez les mesures barrière (lavage de main, masque). <br>
+                        Surveillez vos symptômes, l’évolution de votre température <br>
+                        corporelle et recherchez un avis médical.</b></p>
+            </div>
+            <div class="sect__recommandation-two">
+                <h3>Apple Gratuit</h3>
+                <p class="nem-tele"><b>080 100 47 47</b></p>
+                <p>www.sante.gov.ma</p>
+
+            </div>
+        </div>
+    </div>
+    <script src="src/js/test.js">
+
+    </script>
+</body>
+    <footer>
+
+        <img src="src/images/png/logo__sante.png" alt="logo">
+        <div class="footer">
+            <div>
+                <ul>
+                    <a class="lang"><b>FRAN</b><img src="src/images/png/Icon material-language.png" alt="icon_lng" /></a>
+    
+    
+                    <li><a href="index.html"><b>Accueil</b></a></li>
+                    <li><a href="Conseil.html"><b>Conseil</b></a></li>
+    
+                </ul>
+            </div>
+            <div>
+                <h3>Contacts utiles</h3>
+                <p><b>Chiffre économique "Alo épidémie vigilance"</b></p>
+                <p class="tele_num"><b>080 100 47 47</b></p>
+                <p><b>Aide médicale urgente</b></p>
+                <p class="tele_num"><b>114</b></p>
+            </div>
+        </div>
+        <div class="bcgfooter">
+            <p> </p>
+        </div>
+    </footer>
+    
+
+</html>
