@@ -646,14 +646,7 @@ input:disabled {
 }
 
 ///////////////////////////QUIZE//////////////
-// #quize1,  #quize2, #quize3, #quize4,#quize5,#quize6,#quize7 {
-//   text-align: center;
-//   display: none;
-//  .confirmé{
-//     display: flex;
-//     justify-content: space-around;
-//   }
-// }
+
 #quize1 {
   text-align: center;
   margin-top: 140px;
@@ -673,9 +666,9 @@ input:disabled {
   }
 }
 input[type="radio"]:after {
-  width: 7px;
-  height: 7px;
-  border-radius: 15px;
+  width: 11px;
+  height: 12px;
+  border-radius: 16px;
   position: relative;
   top: -6px;
   content: "";
@@ -688,7 +681,16 @@ input[type="radio"]:checked:after {
   display: inline-block;
   border: 2px solid white;
 }
-
+// .main__questionnaire {
+//   form {
+//     input #degrés{
+//       max-width: 30%;
+//     }
+//   }
+// }
+.form__question{
+  margin-top: 30px;
+}
   
   
   
