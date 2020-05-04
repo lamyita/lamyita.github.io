@@ -367,14 +367,21 @@ body {
   display: none;
 }
 
-.progressbar {
+// .advanceBar {
+//   height: 2em;
+//   width: 85%;
+//   margin-top: 1.5em;
+//   background-color: #fff;
+//   border-radius: 25px;
+//   border: 10px solid $text_color;
+//   margin-left: 10%;
+// }
+progress{
   height: 2em;
   width: 85%;
   margin-top: 1.5em;
-  background-color: #fff;
-  border-radius: 25px;
-  border: 10px solid $text_color;
-  margin-left: 10%;
+
+
 }
 
 .numerotation {

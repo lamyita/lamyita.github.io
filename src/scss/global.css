@@ -269,14 +269,10 @@ body {
 .header__text {
   display: none; }
 
-.progressbar {
+progress {
   height: 2em;
   width: 85%;
-  margin-top: 1.5em;
-  background-color: #fff;
-  border-radius: 25px;
-  border: 10px solid #1A519E;
-  margin-left: 10%; }
+  margin-top: 1.5em; }
 
 .numerotation {
   display: flex;
