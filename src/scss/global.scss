@@ -593,21 +593,21 @@ form {
 
 }
 
-.answer-inputs {
+.reponse-inputs {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 25vh;
 }
 
-.answer-inputs input[type="number"] {
+.reponse-inputs input[type="number"] {
   font-size: 16px;
   border: 1px solid #1078AD;
   width: 55%;
   padding: 10px;
 }
 
-.answer-inputs .input-span {
+.reponse-inputs .input-span {
   font-size: 22px;
   border: 1px solid #1078AD;
   border-left: none;
@@ -616,16 +616,16 @@ form {
   background-color: #edf6fa;
 }
 
-.answer-inputs input[type="radio"] {
+.reponse-inputs input[type="radio"] {
   -webkit-appearance: none;
 }
 
-.answer-inputs input[type="radio"]:checked+label {
+.reponse-inputs input[type="radio"]:checked+label {
   background-color: #1078AD;
   color: #F4CF1B;
 }
 
-.answer-inputs label {
+.reponse-inputs label {
   height: 80px;
   width: 120px;
   color: #1078AD;
@@ -639,9 +639,11 @@ form {
   padding: 9px 0px 0;
   transition: .5s ease;
   margin-right: 50px;
+  margin-top: 30px;
+
 }
 
-.answer-inputs label span {
+.reponse-inputs label span {
   font-size: 22px;
   position: relative;
   bottom: 5px;
@@ -671,22 +673,22 @@ input:disabled {
     justify-content: space-evenly;
   }
 }
-input[type="radio"]:after {
-  width: 11px;
-  height: 12px;
-  border-radius: 16px;
-  position: relative;
-  top: -6px;
-  content: "";
-  display: inline-block;
-}
+// input[type="radio"]:after {
+//   width: 11px;
+//   height: 12px;
+//   border-radius: 16px;
+//   position: relative;
+//   top: -6px;
+//   content: "";
+//   display: inline-block;
+// }
 
-input[type="radio"]:checked:after {
-  background-color: #ffa500;
-  content: "";
-  display: inline-block;
-  border: 2px solid white;
-}
+// input[type="radio"]:checked:after {
+//   background-color: #ffa500;
+//   content: "";
+//   display: inline-block;
+//   border: 2px solid white;
+// }
 // .main__questionnaire {
 //   form {
 //     input #degrés{

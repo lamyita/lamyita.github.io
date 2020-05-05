@@ -43,13 +43,13 @@
   /////// function for start test/////////////////////
 
   
- start.addEventListener("click", () => {
- sect[0].classList.add("affiche");
+start.addEventListener("click", () => {
+sect[0].classList.add("affiche");
 sect[1].classList.remove("affiche");
 question.innerHTML = questions[0]; 
 back.classList.add("affiche")
 next.setAttribute("disabled", "disabled");
-// reponse = document.querySelectorAll(".reponse-inputs input");
+
 displayNumb.innerHTML = valeur + "/" + questions.length;
 advanceBar(conter);
 recovery();
@@ -72,8 +72,8 @@ advanceBar = (e) =>{
   question.innerHTML = questions[conter];
   e.preventDefault();
   back.classList.remove("affiche")
-  // reponse = document.querySelectorAll(".reponse-inputs input");
-  ///// remove next 
+
+  ///// remove next ////////////////
   next.setAttribute("disabled", "disabled");
   displayNumb.innerHTML = valeur + "/" + questions.length;
   advanceBar(conter);
@@ -81,6 +81,10 @@ advanceBar = (e) =>{
 
   });
    back.addEventListener("click", (e) => {
+    displayResult.classList.add("affiche");
+    next.classList.remove("affiche");
+
+
 if(conter > 0){ 
 conter--;
 
@@ -89,7 +93,6 @@ if(conter == 0){
   back.classList.add("affiche");
 } 
 question.innerHTML = questions[conter];
-// reponse = document.querySelectorAll(".reponse-inputs input");
 advanceBar(conter);
 
 e.preventDefault();
@@ -101,15 +104,16 @@ recovery = () => {
 
   for (let i = 0; i < reponse.length; i++) {
     reponse[i].addEventListener("change", () => {
-    //   if (reponse.length == 1) {
+
         resultat.splice(conter, 1, reponse[i].value);
         suivant.removeAttribute("disabled");
-    //   } else {
-    //     if (reponse[i].checked == true) {
-    //       resultat.splice(conter, 1, reponse[i].value);
-    //       suivant.removeAttribute("disabled");
-    //     }
-    //   }
+   
     });
   }
 };
+//////////////displayResult///////////////
+displayResult.addEventListener("click", (e) =>{
+  sect[1].classList.add("affiche");
+  sect[2].classList.remove("affiche");
+  e.preventDefault();
+});
