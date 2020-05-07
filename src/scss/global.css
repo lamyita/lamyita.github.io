@@ -411,7 +411,7 @@ form {
   justify-content: space-between; }
   .inputs #precedent,
   .inputs #suivant,
-  .inputs #resultat {
+  .inputs #result {
     border: 1px dotted #1A519E;
     border-radius: 5px;
     padding: 5px 10px;
@@ -461,6 +461,9 @@ form {
   transition: .5s ease;
   margin-right: 50px;
   margin-top: 30px; }
+
+.ajout-marg {
+  margin-top: 80px; }
 
 .reponse-inputs label span {
   font-size: 22px;

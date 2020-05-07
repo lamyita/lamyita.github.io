@@ -582,7 +582,7 @@ form {
 
   #precedent,
   #suivant,
-  #resultat {
+  #result {
     border: 1px dotted $text_color;
     border-radius: 5px;
     padding: 5px 10px;
@@ -640,7 +640,15 @@ form {
   transition: .5s ease;
   margin-right: 50px;
   margin-top: 30px;
-
+  
+}
+// .reponse-inputs {
+//   label.lastchild{
+//     margin-top: 20px;
+//   }
+// }
+.ajout-marg{
+  margin-top: 80px;
 }
 
 .reponse-inputs label span {
@@ -673,6 +681,7 @@ input:disabled {
     justify-content: space-evenly;
   }
 }
+
 // input[type="radio"]:after {
 //   width: 11px;
 //   height: 12px;
