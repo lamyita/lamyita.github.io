@@ -282,7 +282,8 @@ Algorithme = () => {
     lastmessage.innerText = displaymessage[5];
   }  if (resultat[0] < 15) {
     lastmessage.innerText = displaymessage[6];
-  }
+
+  } 
 };
 displaymessage = [
   ` nous vous conseillons de rester à votre domicile et de contacter votre médecin en cas d’apparition de nouveaux symptômes. Vous pourrez aussi utiliser à nouveau l’application pour réévaluer vos symptômes. `,
